@@ -1,0 +1,8 @@
+
+<br>
+
+```
+howTo() {
+    includeCode("snippets");
+}
+```

@@ -1,0 +1,21 @@
+{
+  "title": "Upload Assets",
+  "description": "Upload files as assets to a specific location",
+  "details": {
+    "steps": [
+      {
+        "title": "Exec the uploaded script",
+        "text": "step1.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "conf.yaml", "target": "/my/location", "chmod": "+w"},
+        {"file": "run.sh", "target": "/my/location", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu20.04"
+  }
+}

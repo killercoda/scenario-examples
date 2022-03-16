@@ -1,0 +1,16 @@
+{
+  "title": "Verification",
+  "description": "Verify user input",
+  "details": {
+    "steps": [
+      {
+        "title": "Please create a file",
+        "text": "create_file.md",
+        "verify": "verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu20.04"
+  }
+}

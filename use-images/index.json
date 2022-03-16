@@ -1,0 +1,17 @@
+{
+  "title": "Use Images",
+  "description": "Display images in Markdown",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "images.md"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu20.04"
+  }
+}
