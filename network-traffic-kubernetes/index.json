@@ -1,0 +1,18 @@
+{
+  "title": "Network Traffic Kubernetes",
+  "description": "Access services running inside a Kubernetes environment",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Run Nginx and access default page",
+        "text": "step1.md"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+  }
+}
