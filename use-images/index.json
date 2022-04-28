@@ -3,11 +3,14 @@
   "description": "Display images in Markdown",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro/intro.md"
     },
     "steps": [
       {
         "text": "images.md"
+      },
+      {
+        "text": "step2/images.md"
       }
     ]
   },

@@ -1,4 +1,12 @@
 
+### Display image from parent directory
+![Scan results](../assets/logo.png)
+
+
+### Display image from parent directory with size
+<img src="../assets/logo.png" style="width: 50px">
+
+
 ### Display image
 
 ![Scan results](./image2.png)
