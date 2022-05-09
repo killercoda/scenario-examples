@@ -1,6 +1,6 @@
 {
   "title": "Ubuntu simple",
   "backend": {
-    "imageid": "ubuntu20.04"
+    "imageid": "ubuntu"
   }
 }

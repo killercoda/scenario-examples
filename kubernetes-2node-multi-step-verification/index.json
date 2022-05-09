@@ -22,6 +22,6 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+    "imageid": "kubernetes-kubeadm-2nodes"
   }
 }
