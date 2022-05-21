@@ -1,2 +1,2 @@
 
-Exec `/my/location/run.sh`
+Exec `/my/location/run.sh`{{exec}}

@@ -11,7 +11,16 @@
     "assets": {
       "host01": [
         {"file": "conf.yaml", "target": "/my/location", "chmod": "+w"},
-        {"file": "run.sh", "target": "/my/location", "chmod": "+x"}
+        {"file": "run.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "*", "target": "/all1"},
+        {"file": "**/*.*", "target": "/all2"},
+        {"file": "**/*.json", "target": "/all-json"},
+        {"file": "app1/**/*.*", "target": "/app1"},
+        {"file": "app1/*/*.json", "target": "/app1-json1"},
+        {"file": "app1/**/*.json", "target": "/app1-json2"},
+        {"file": "app2/**/*.*", "target": "/app2"},
+        {"file": "app*/*.*", "target": "/apps1"},
+        {"file": "app*/**/*.*", "target": "/apps2"}
       ]
     }
   },
