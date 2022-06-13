@@ -10,6 +10,7 @@
     ],
     "assets": {
       "host01": [
+        {"file": "conf.yaml", "target": "~/", "chmod": "+w"},
         {"file": "conf.yaml", "target": "/my/location", "chmod": "+w"},
         {"file": "run.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "app1/readme.md", "target": "/my/location", "chmod": "+w"},
