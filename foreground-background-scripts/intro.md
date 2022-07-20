@@ -1,5 +1,5 @@
 
-> <strong>Note</strong> that the background script of the `intro` section is limited to a maximum runtime of a few minutes. If your installs need longer you should use a foreground script.
+> <strong>Note</strong>: logs of the *intro* background script can be found at `/var/log/killercoda`
 
 <br>
 
