@@ -1,2 +1,0 @@
-
-Create file `/etc/panda`
