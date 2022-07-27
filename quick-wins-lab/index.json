@@ -1,0 +1,30 @@
+{
+  "title": "ScyllaDB: Quick Wins: Install and Start Scylla Lab",
+  "description": "Quickly start Scylla by running a single instance using Docker",
+  "difficulty": "Beginner",
+  "time": "6 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install and Start Scylla",
+        "text": "step1.md"
+      },
+      {
+        "title": "Basic CQL Operations",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

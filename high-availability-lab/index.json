@@ -1,0 +1,54 @@
+{
+  "title": "ScyllaDB: High Availability Lab",
+  "description": "See a hands-on example of how Availability works in Scylla. In this lab, you’ll try setting the Replication Factor and Consistency Level and you’ll see how they affect read and write operations when all of the nodes in the cluster are up, and also when some of them are unavailable.",
+  "difficulty": "Beginner",
+  "time": "13 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Create the Cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Default CL",
+        "text": "step2.md"
+      },
+      {
+        "title": "CL=QUORUM, All Nodes Are Up",
+        "text": "step3.md"
+      },
+      {
+        "title": "CL=ALL, All Nodes Are Up",
+        "text": "step4.md"
+      },
+      {
+        "title": "CL=QUORUM, One Node is Down",
+        "text": "step5.md"
+      },
+      {
+        "title": "CL=ALL, One Node is Down",
+        "text": "step6.md"
+      },
+      {
+        "title": "CL=QUORUM, Two Nodes Are Down",
+        "text": "step7.md"
+      },
+      {
+        "title": "CL=ONE, Two Nodes Are Down",
+        "text": "step8.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
