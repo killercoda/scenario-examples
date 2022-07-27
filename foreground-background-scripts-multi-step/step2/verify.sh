@@ -1,1 +1,0 @@
-stat /tmp/step2
