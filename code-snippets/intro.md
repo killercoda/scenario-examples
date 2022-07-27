@@ -1,8 +1,0 @@
-
-<br>
-
-```
-howTo() {
-    includeCode("snippets");
-}
-```
