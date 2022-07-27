@@ -18,8 +18,10 @@ Next, create a table with three columns: user id, first name, and last name, and
 
 Insert two rows into the newly created table: 
 
-```insert into users(user_id, fname, lname) values (1, 'rick', 'sanchez');
-insert into users(user_id, fname, lname) values (4, 'rust', 'cohle');```{{execute}}
+```
+insert into users(user_id, fname, lname) values (1, 'rick', 'sanchez');
+insert into users(user_id, fname, lname) values (4, 'rust', 'cohle');
+```{{execute}}
 
 Now, read the table contents:
 
