@@ -1,0 +1,23 @@
+{
+  "title": "Kubernetes Dashboard",
+  "description": "Run and access the Kubernetes Dashboard",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Run and access",
+        "text": "step1.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "dashboard.yaml", "target": "/root", "chmod": "+w"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
