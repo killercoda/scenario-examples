@@ -1,0 +1,34 @@
+{
+  "title": "ScyllaDB: Materialized Views and Indexes Lab 2",
+  "description": "Global and Local Secondary indexes in action, with example use cases and an explanation of when to use each.",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Base Table",
+        "text": "step1.md"
+      },
+      {
+        "title": "Global Index",
+        "text": "step2.md"
+      },
+      {
+        "title": "Local Index",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

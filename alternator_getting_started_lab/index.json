@@ -1,0 +1,30 @@
+{
+  "title": "ScyllaDB: Project Alternator: Getting Started Lab",
+  "description": "Get started with Alternator, an open-source project that gives Scylla compatibility with Amazon DynamoDB.",
+  "difficulty": "Beginner",
+  "time": "12 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install and Setup a Cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a Table, Perform Basic Queries",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
