@@ -50,7 +50,8 @@ Let’s look at a table of buildings: the key is the building’s unique name, a
 Now let’s insert some data:
 
 
-```INSERT INTO buildings (name, city, built_year, height_meters)
+```
+INSERT INTO buildings (name, city, built_year, height_meters)
       VALUES ('Burj Khalifa', 'Dubai', 2010, 828);
 INSERT INTO buildings (name, city, built_year, height_meters)
       VALUES ('Shanghai World Financial Center', 'Shanghai', 2008, 487);
@@ -63,7 +64,8 @@ INSERT INTO buildings (name, city, built_year, height_meters)
 INSERT INTO buildings (name, city, built_year, height_meters)
       VALUES ('Empire State Building', 'New York City', 1931, 381);
 INSERT INTO buildings (name, city, built_year, height_meters)
-      VALUES ('Chrysler Building', 'New York City', 1930, 283);```{{execute}} 
+      VALUES ('Chrysler Building', 'New York City', 1930, 283);
+```{{execute}} 
 
 The table now looks like this:
 
