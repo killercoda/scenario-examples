@@ -38,7 +38,8 @@ dish_type text,
 price float,
 PRIMARY KEY (city, name));`{{execute}}
 
-```INSERT INTO menus (city, name, price, dish_type) VALUES ('Reykjavik', 'hakarl', 16, 'cold Icelandic starter');
+```
+INSERT INTO menus (city, name, price, dish_type) VALUES ('Reykjavik', 'hakarl', 16, 'cold Icelandic starter');
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Reykjavik', 'svid', 21, 'hot Icelandic main dish');
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Warsaw', 'sour rye soup', 7, 'Polish soup');
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Warsaw', 'sorrel soup', 5, 'Polish soup');
@@ -46,7 +47,8 @@ INSERT INTO menus (city, name, price, dish_type) VALUES ('Cracow', 'beef tripe s
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Warsaw', 'pork jelly', 8, 'cold Polish starter');
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Ho Chi Minh', 'bun mam', 8, 'Vietnamese soup');
 INSERT INTO menus (city, name, price, dish_type) VALUES ('Da Lat', 'banh mi', 5, 'Vietnamese breakfast');
-INSERT INTO menus (city, name, price, dish_type) VALUES ('Ho Chi Minh', 'goi cuon', 6, 'Vietnamese hot starter');```{{execute}}
+INSERT INTO menus (city, name, price, dish_type) VALUES ('Ho Chi Minh', 'goi cuon', 6, 'Vietnamese hot starter');
+```{{execute}}
 
 Now let’s run some queries:
 
