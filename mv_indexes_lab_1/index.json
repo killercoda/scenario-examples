@@ -1,0 +1,30 @@
+{
+  "title": "ScyllaDB: Materialized Views and Indexes Lab 1",
+  "description": "Create a base table and different Materialized Views (MV) for that base table, execute updates to the base table, and learn how to query the MV.",
+  "difficulty": "Intermediate",
+  "time": "16 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Setting up the Environment",
+        "text": "step1.md"
+      },
+      {
+        "title": "Creating the Materialized View",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
