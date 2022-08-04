@@ -1,9 +1,4 @@
 
-> <strong>When using the visual editor</strong> it's not possible yet to click-exec code into the editors terminals, but it's
-> already planned for a future update. Till then, all exec will be automatically switched to copy when using the visual editor.
-
-<br>
-
 ### Single line code blocks can be copied by default
 `copy me`
 
@@ -12,6 +7,13 @@
 
 ### Execute a command per click
 `ls -lh`{{exec}}
+
+### Send Ctrl+c before execute
+Run a blocking command:
+`sleep 1d`{{exec}}
+
+End it and run another:
+`whoami`{{exec interrupt}}
 
 ### Copy multiline code block
 ```
@@ -25,3 +27,14 @@ pwd
 uname -r
 pwd
 ```{{exec}}
+
+
+### Execute multiline code block with Ctrl+c
+Run a blocking command:
+`sleep 1d`{{exec}}
+
+End it and run others:
+```
+uname -r
+whoami
+```{{exec interrupt}}
