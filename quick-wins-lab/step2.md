@@ -1,4 +1,4 @@
-After seeing how to run a single Scylla instance in the last step, and running the CQL Shell, in this part, you will see how to run some basic CQL commands. You will work with our newly created Scylla instance to create a table, insert data into it, and read the data.
+After seeing how to run a single ScyllaDB instance in the last step, and running the CQL Shell, in this part, you will see how to run some basic CQL commands. You will work with our newly created ScyllaDB instance to create a table, insert data into it, and read the data.
 
 ## Create a Keyspace and Table
 
@@ -27,7 +27,7 @@ Now, read the table contents:
 
 `select * from users;`{{execute}}
 
-To summarize, we saw how easy it is to start a Scylla cluster and perform some basic CQL operations. In the next lessons, we will see some more advanced commands.
+To summarize, we saw how easy it is to start a ScyllaDB cluster and perform some basic CQL operations. In the next lessons, we will see some more advanced commands.
 
 Read more about the CQL shell [here](https://docs.scylladb.com/getting-started/cqlsh/).
 
