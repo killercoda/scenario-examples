@@ -1,7 +1,7 @@
-In production, a Scylla cluster should have at least three nodes in a cluster. In this lab, just for the demonstration, you will start by creating a single node cluster with Alternator enabled.
+In production, a ScyllaDB cluster should have at least three nodes in a cluster. In this lab, just for the demonstration, you will start by creating a single node cluster with Alternator enabled.
 
 
-## Create a Scylla Cluster
+## Create a ScyllaDB Cluster
 
 If you haven’t done so yet, download the example from git:
 
@@ -13,15 +13,15 @@ Go to the directory of the alternator example:
 
 Start a one-node cluster with Alternator enabled. 
 
-By default, Scylla does not listen to DynamoDB API requests. To enable such requests, set the alternator-port configuration option to the port (8000 in this example), which will listen for DynamoDB API requests.
+By default, ScyllaDB does not listen to DynamoDB API requests. To enable such requests, set the alternator-port configuration option to the port (8000 in this example), which will listen for DynamoDB API requests.
 
-`docker run  --name some-scylla --hostname some-scylla -p 8000:8000 -d scylladb/scylla:4.4.0 --smp 1 --overprovisioned 1 --alternator-port=8000 --alternator-write-isolation=always`{{execute}}
+`docker run  --name some-scylla --hostname some-scylla -p 8000:8000 -d scylladb/scylla:4.3.0 --smp 1 --overprovisioned 1 --alternator-port=8000 --alternator-write-isolation=always`{{execute}}
 
 Wait a few seconds and make sure the cluster is up and running:
 
 `docker exec -it some-scylla nodetool status`{{execute}}
 
-In this example, you will use the Python language to interact with Scylla with the [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) SDK for Python. It’s also possible to use the CLI or other languages such as Java, C#, Python, Perl, PHP, Ruby, Erlang, Javascript. 
+In this example, you will use the Python language to interact with ScyllaDB with the [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) SDK for Python. It’s also possible to use the CLI or other languages such as Java, C#, Python, Perl, PHP, Ruby, Erlang, Javascript. 
 
 Next, if you don’t already have it set up, install boto3 python library, which also contains drivers for DynamoDB:
 
