@@ -44,4 +44,4 @@ Execute the read to see the results:
 
 `python3 read.py`{{execute}}
 
-DynamoDB supports two consistency levels for reads, “eventual consistency” and “strong consistency.” You can learn more about ScyllaDB consistency levels here and here. Under the hood, ScyllaDB implements Strongly-consistent reads with LOCAL_QUORUM, while eventually-consistent reads are performed with LOCAL_ONE.
+DynamoDB supports two [consistency levels for reads](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html), “eventual consistency” and “strong consistency.” You can learn more about ScyllaDB consistency levels [here](https://university.scylladb.com/courses/scylla-essentials-overview/lessons/architecture/topic/consistency-level-cl/) and [here](https://university.scylladb.com/courses/the-mutant-monitoring-system-training-course/lessons/multi-datacenter-consistency-levels/). Under the hood, ScyllaDB implements Strongly-consistent reads with LOCAL_QUORUM, while eventually-consistent reads are performed with LOCAL_ONE.
