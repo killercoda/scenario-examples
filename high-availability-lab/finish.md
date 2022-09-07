@@ -4,4 +4,4 @@ CL=ALL will provide higher consistency, while CL=1 will provide higher availabil
 
 You can read more about the Replication Factor and Consistency Levels [here](https://docs.scylladb.com/architecture/architecture-fault-tolerance/). 
 
-In the next lesson you will take a closer look at the Scylla architecture. 
+In the next lesson you will take a closer look at the ScyllaDB architecture. 
