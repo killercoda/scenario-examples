@@ -27,12 +27,12 @@ Next, if you don’t already have it set up, install boto3 python library, which
 
 `sudo pip install --upgrade boto3`{{execute}}
 
-In the three scripts create.py read.py and write.py change the value for “endpoint_url” to the IP address of the node. Copy the IP address from the output of the previously used "nodetool status" command, then edit the three files and replace the IP address:
+In the three scripts create.py read.py and write.py change the value for “endpoint_url” to the IP address of the node. Copy the IP address from the output of the previously used "nodetool status" command, then edit the three files (use the Editor tab) and replace the IP address:
 
-`scylla-code-samples/alternator/getting-started/create.py`{{open}}
+scylla-code-samples/alternator/getting-started/create.py
 
-`scylla-code-samples/alternator/getting-started/read.py`{{open}}
+scylla-code-samples/alternator/getting-started/read.py
 
-`scylla-code-samples/alternator/getting-started/write.py`{{open}}
+scylla-code-samples/alternator/getting-started/write.py
 
 
