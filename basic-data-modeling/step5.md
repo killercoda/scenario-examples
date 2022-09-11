@@ -16,7 +16,7 @@ Insert some data:
 INSERT INTO heartrate_v6(pet_chip_id, time, heart_rate) VALUES (fead97e9-4d77-40c9-ba15-c45478542e20, '2011-02-03 04:05:05', 80);
 INSERT INTO heartrate_v6(pet_chip_id, time, heart_rate) VALUES (47045afb-fd11-44c6-9d0f-82428434e887, '2011-02-03 04:05:10', 83);`{{execute}}
 
-As we only defined the pet_chip_id as the Primary Key (which in this case is also the Partition Key), this is how the data would be stored in Scylla:
+As we only defined the pet_chip_id as the Primary Key (which in this case is also the Partition Key), this is how the data would be stored in ScyllaDB:
 
 ![](https://university.scylladb.com/topic/table-and-basic-concepts/primary_key-2/#main)
 
@@ -29,13 +29,13 @@ We get an error message.
 
 Since no partition key is specified, this query would perform a full cluster scan. This is slow and inefficient.
 
-If we use any SELECT query without including the partition key, we’re going to be doing a full cluster scan. This is blocked by default. [Allow Filtering](https://docs.scylladb.com/getting-started/dml/#allowing-filtering) bypasses Scylla restrictions on inefficient scans, which can potentially create a significant load on the system. It’s easy to see why this is very inefficient and slow. Think of a production cluster with many nodes and with billions of rows.
+If we use any SELECT query without including the partition key, we’re going to be doing a full cluster scan. This is blocked by default. [Allow Filtering](https://docs.scylladb.com/getting-started/dml/#allowing-filtering) bypasses ScyllaDB restrictions on inefficient scans, which can potentially create a significant load on the system. It’s easy to see why this is very inefficient and slow. Think of a production cluster with many nodes and with billions of rows.
 
 To solve this, we can either define the table to include the time field as the clustering key, as we saw in a previous step. Another solution would be to include the partition key in the query:
 
 `SELECT * FROM heartrate_v6 WHERE pet_chip_id = 268e074a-a801-476c-8db5-276eb2283b03;`{{execute}}
 
-This query runs fast and returns the answer almost immediately, as we specified the partition key. Scylla knows exactly which node contains the data by hashing the ID (which is the partition key). This is quick and efficient.
+This query runs fast and returns the answer almost immediately, as we specified the partition key. ScyllaDB knows exactly which node contains the data by hashing the ID (which is the partition key). This is quick and efficient.
 
 If we wanted to query for the pet’s heart rate by pet_chip_id and time? We could then define the table as follows:
 
