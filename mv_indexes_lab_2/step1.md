@@ -15,9 +15,7 @@ Wait a minute or so and check the node status:
 
 You’ll see that eventually, all the nodes have UN for status. U means up, and N means normal. If you get a message "nodetool: Unable to connect to ScyllaDB API server: java.net.ConnectException: Connection refused (Connection refused)", it means you have to wait a bit more for the node to be up and responding. 
 
-Open 3 terminals (#1 for the base table, #2 for global index, #3 for local index
-
-Switch to terminal #1, run the CQL Shell, and create a Keyspace:
+Run the CQL Shell, and create a Keyspace:
 
 `docker exec -ti scylla-si /bin/bash`{{execute}}
 
