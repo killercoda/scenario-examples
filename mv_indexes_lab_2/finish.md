@@ -2,9 +2,9 @@ To summarize, Indexing is a useful tool that provides more types of queries on y
 
 If you’d like to further investigate what happens when using the above queries with secondary indexes, try turning [TRACING](https://docs.scylladb.com/using-scylla/tracing/) on and executing the queries again.
 
-Check out other courses on [Scylla University](https://university.scylladb.com/) to improve your skills. 
+Check out other courses on [ScyllaDB University](https://university.scylladb.com/) to improve your skills. 
 
-You can learn more about these topics in Scylla Documentation: [Materialized Views](https://docs.scylladb.com/using-scylla/materialized-views/#), [Local Secondary Indexes](https://docs.scylladb.com/using-scylla/local-secondary-indexes/), and [Global Secondary Indexes](https://docs.scylladb.com/using-scylla/secondary-indexes/). Two additional and useful references are [this](https://www.scylladb.com/2017/11/03/secondary/) blog post and [this](https://www.scylladb.com/2019/07/23/global-or-localsecondary-indexes-in-scylla-the-choice-is-now-yours/) one.
+You can learn more about these topics in ScyllaDB Documentation: [Materialized Views](https://docs.scylladb.com/using-scylla/materialized-views/#), [Local Secondary Indexes](https://docs.scylladb.com/using-scylla/local-secondary-indexes/), and [Global Secondary Indexes](https://docs.scylladb.com/using-scylla/secondary-indexes/). Two additional and useful references are [this](https://www.scylladb.com/2017/11/03/secondary/) blog post and [this](https://www.scylladb.com/2019/07/23/global-or-localsecondary-indexes-in-scylla-the-choice-is-now-yours/) one.
 
 
 
