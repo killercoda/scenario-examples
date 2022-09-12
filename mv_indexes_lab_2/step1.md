@@ -3,7 +3,7 @@ In this step, you'll set up the environment by creating a one-node ScyllaDB clus
 
 ![](https://university.scylladb.com/800x400-blog-allow-filtering/)
 
-## Setup and Creating the Base Table - on Terminal #1
+## Setup and Creating the Base Table 
 
 Start by creating a Docker container with ScyllaDB. This tutorial was created with version 4.3:
 
