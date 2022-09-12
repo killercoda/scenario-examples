@@ -8,9 +8,9 @@ Reads from a Materialized View are just as fast as regular reads from a table an
 Some common use cases for MV are Indexing with denormalization, different sort orders, and filtering (pre-computed queries). This session also goes over examples, the CQL syntax to use, and limitations.
 
 In this lab, you’ll create a base table and different Materialized Views for that base table. You’ll execute updates to the base table and see what happens to the view. Additionally, you’ll learn how to query the MV.
-Start by creating a Docker container with Scylla.
+Start by creating a Docker container with ScyllaDB.
 
-This lab is part of [Scylla University](https://university.scylladb.com/). You can learn more about MV in this [lesson](https://university.scylladb.com/courses/data-modeling/lessons/materialized-views-secondary-indexes-and-filtering/).
+This lab is part of [ScyllaDB University](https://university.scylladb.com/). You can learn more about MV in this [lesson](https://university.scylladb.com/courses/data-modeling/lessons/materialized-views-secondary-indexes-and-filtering/).
 
 
 
