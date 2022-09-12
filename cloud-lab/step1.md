@@ -1,9 +1,9 @@
-A [Cluster](https://university.scylladb.com/courses/scylla-essentials-overview/lessons/architecture/topic/cluster-node-ring/) is a collection of [Nodes](https://university.scylladb.com/topic/node/) that Scylla uses to store the data. The nodes are logically distributed like a ring. A minimum cluster typically consists of at least three nodes. Data is automatically [replicated](https://university.scylladb.com/topic/data-replication/) across the cluster, depending on the Replication Factor. Learn more about Scylla Architecture in [this lesson](https://university.scylladb.com/courses/scylla-essentials-overview/lessons/architecture/).
+A [Cluster](https://university.scylladb.com/courses/scylla-essentials-overview/lessons/architecture/topic/cluster-node-ring/) is a collection of [Nodes](https://university.scylladb.com/topic/node/) that ScyllaDB uses to store the data. The nodes are logically distributed like a ring. A minimum cluster typically consists of at least three nodes. Data is automatically [replicated](https://university.scylladb.com/topic/data-replication/) across the cluster, depending on the Replication Factor. Learn more about ScyllaDB Architecture in [this lesson](https://university.scylladb.com/courses/scylla-essentials-overview/lessons/architecture/).
 
 
-## Create a Scylla Cluster
+## Create a ScyllaDB Cluster
 
-[Sign in](https://cloud.scylladb.com/user/signin) to Scylla Cloud if you already have a user. Otherwise, [create](https://cloud.scylladb.com/user/signup) one. 
+[Sign in](https://cloud.scylladb.com/user/signin) to ScyllaDB Cloud if you already have a user. Otherwise, [create](https://cloud.scylladb.com/user/signup) one. 
 
 Once you’re in, click on Add New Cluster. 
 
@@ -16,5 +16,5 @@ Wait until the cluster is ready.
 
 Next, you’ll connect to it. Click on Connect.
 
-It’s also possible to use your AWS account with Scylla Cloud using the Scylla Cloud Bring Your Own Account (BYOA) feature, learn more about it [here](https://docs.scylladb.com/scylla-cloud/cloud-setup/scylla-cloud-byoa/). 
+It’s also possible to use your AWS account with ScyllaDB Cloud using the ScyllaDB Cloud Bring Your Own Account (BYOA) feature, learn more about it [here](https://docs.scylladb.com/scylla-cloud/cloud-setup/scylla-cloud-byoa/). 
 
