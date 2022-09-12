@@ -1,11 +1,11 @@
 
-In this step, you'll set up the environment by creating a one-node Scylla cluster. You’ll then connect to the cluster with the CQL Shell, create a keyspace, a table, insert some data into the newly created table, and read the data. Next you'll consider what can be done if you want to query the table by a field that isn't part of the primary key. 
+In this step, you'll set up the environment by creating a one-node ScyllaDB cluster. You’ll then connect to the cluster with the CQL Shell, create a keyspace, a table, insert some data into the newly created table, and read the data. Next you'll consider what can be done if you want to query the table by a field that isn't part of the primary key. 
 
 ![](https://university.scylladb.com/800x400-blog-allow-filtering/)
 
 ## Setup and Creating the Base Table - on Terminal #1
 
-Start by creating a Docker container with Scylla. This tutorial was created with version 4.3:
+Start by creating a Docker container with ScyllaDB. This tutorial was created with version 4.3:
 
 `docker run --name scylla-si -d scylladb/scylla:4.3.0 --overprovisioned 1 --smp 1`{{execute}}
 
@@ -13,7 +13,7 @@ Wait a minute or so and check the node status:
 
 `docker exec -it scylla-si nodetool status`{{execute}}
 
-You’ll see that eventually, all the nodes have UN for status. U means up, and N means normal. If you get a message "nodetool: Unable to connect to Scylla API server: java.net.ConnectException: Connection refused (Connection refused)", it means you have to wait a bit more for the node to be up and responding. 
+You’ll see that eventually, all the nodes have UN for status. U means up, and N means normal. If you get a message "nodetool: Unable to connect to ScyllaDB API server: java.net.ConnectException: Connection refused (Connection refused)", it means you have to wait a bit more for the node to be up and responding. 
 
 Open 3 terminals (#1 for the base table, #2 for global index, #3 for local index
 
