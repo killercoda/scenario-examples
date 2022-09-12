@@ -45,9 +45,11 @@ We can now query according to the clustering key columns: pet_name and heart_rat
 
 `SELECT * from heartrate_v4 WHERE pet_chip_id = 123e4567-e89b-12d3-a456-426655440b23 AND pet_name = 'Duke' AND heart_rate = 90;`{{execute}}
 
+
+We insert some data and query according to the partition key and clustering key, in the correct order, so it works. 
+
 * If there is more than one column in the Clustering Key (pet_name and heart_rate in the example above), the order of these columns defines the clustering order. For a given partition, all the rows are physically ordered inside ScyllaDB by the clustering order. This order determines what select query you can efficiently run on this partition.
 * In this example, the ordering is first by pet_name and then by heart_rate.
 * In addition to the Partition Key columns, a query may include the Clustering Key. If it does include the Clustering Key columns, they must be used in the same order as they were defined.
-
 
 
