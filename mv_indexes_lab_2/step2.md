@@ -1,5 +1,5 @@
 
-Global Secondary indexes (also called “Secondary indexes”) are a mechanism in Scylla which allows efficient searches on non-partition keys by creating an index. 
+Global Secondary indexes (also called “Secondary indexes”) are a mechanism in ScyllaDB which allows efficient searches on non-partition keys by creating an index. 
 
 They are indexes created on columns other than the entire partition key, where each secondary index indexes one specific column. A secondary index can index a column used in the partition key in the case of a composite partition key.  With global indexing, a materialized view is created for each index. This Materialized View has the indexed column as a partition key and primary key (partition key and clustering keys) of the indexed row as clustering keys.
 
@@ -7,7 +7,7 @@ In this step you'll see how it works.
 
 ## Global Indexes – on Terminal #2
 
-The data model in Scylla partitions data between cluster nodes using a partition key, which is defined in the database schema. This is an efficient way to look up rows because you can find the node hosting the row by hashing the partition key.
+The data model in ScyllaDB partitions data between cluster nodes using a partition key, which is defined in the database schema. This is an efficient way to look up rows because you can find the node hosting the row by hashing the partition key.
 
 However, this also means that finding a row using a non-partition key requires a full table scan which is inefficient.
 
