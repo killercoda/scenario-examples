@@ -5,13 +5,13 @@ After setting up the environment and creating the building table, let’s move o
 
 ## Creating the Materialized View
 
-Notice that in this example that the data (city, built) or just (built) could also have served as a key because it uniquely determines a building in this data set. However, Scylla has no way to guarantee that this remains as more data is added. 
+Notice that in this example that the data (city, built) or just (built) could also have served as a key because it uniquely determines a building in this data set. However, ScyllaDB has no way to guarantee that this remains as more data is added. 
 
 For example, one might add another building built-in 1930 to the list (we’ll do this below). The only key which is guaranteed to be unique and remain unique as additional data is added is the original table’s key, name in our case.
 The above table allows us to query buildings by name.
 What happens if we want to find buildings by the city?
 
-From this “base table,” let’s ask Scylla to automatically maintain a second table, which is a Materialized View for finding buildings by the city. The new table will have the city as the partition key. The city cannot be the entire key for each record (a building) because we can have multiple buildings in the same city. 
+From this “base table,” let’s ask ScyllaDB to automatically maintain a second table, which is a Materialized View for finding buildings by the city. The new table will have the city as the partition key. The city cannot be the entire key for each record (a building) because we can have multiple buildings in the same city. 
 Therefore we will have (city, name) as the primary key of the new Materialized View table: the city is the partition key, and the name is a clustering key:
 
 `CREATE MATERIALIZED VIEW building_by_city AS
