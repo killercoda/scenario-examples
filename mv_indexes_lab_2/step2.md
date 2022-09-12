@@ -5,13 +5,13 @@ They are indexes created on columns other than the entire partition key, where e
 
 In this step you'll see how it works. 
 
-## Global Indexes – on Terminal #2
+## Global Indexes
 
 The data model in ScyllaDB partitions data between cluster nodes using a partition key, which is defined in the database schema. This is an efficient way to look up rows because you can find the node hosting the row by hashing the partition key.
 
 However, this also means that finding a row using a non-partition key requires a full table scan which is inefficient.
 
-Switch to terminal #2 and create a global index on column Dish_type, which we want to query by:
+Next, create a global index on column Dish_type, which we want to query by:
 
 `CREATE INDEX ON menus(dish_type);`{{execute}}
 
