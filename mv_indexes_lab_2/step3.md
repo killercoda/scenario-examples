@@ -8,9 +8,7 @@ Additionally, it’s perfectly legal to create several indexes on one table. Som
 
 In this step, you'll create a local index and learn how to use it. 
 
-## Local Indexes - on Terminal #3
-
-Switch to terminal #3.
+## Local Indexes 
 
 Let’s consider indexing dish_type again, but this time in a local index. Our use case is being able to ask for all dishes of a given type for one specific city. Let’s start by creating a local index. By creating a local index we instruct the database to use the same partition key columns as a base:
 
