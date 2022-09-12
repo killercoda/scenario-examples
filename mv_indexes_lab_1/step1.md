@@ -1,14 +1,14 @@
 
-In this step, you'll set up the environment by creating a three-node Scylla cluster. You’ll then connect to the cluster with the CQL Shell, create a keyspace, a table, insert some data into the newly created table, and read the data. 
-These topics are explained in more detail in [this course](https://university.scylladb.com/courses/scylla-essentials-overview/) on Scylla University.
+In this step, you'll set up the environment by creating a three-node ScyllaDB cluster. You’ll then connect to the cluster with the CQL Shell, create a keyspace, a table, insert some data into the newly created table, and read the data. 
+These topics are explained in more detail in [this course](https://university.scylladb.com/courses/scylla-essentials-overview/) on ScyllaDB University.
 
 ## Setting Up the Environment
 
-Start by creating a three-node Scylla cluster using Docker. Create one node, called Node_X:
+Start by creating a three-node ScyllaDB cluster using Docker. Create one node, called Node_X:
 
 `docker run --name Node_X -d scylladb/scylla:4.3.0 --overprovisioned 1 --smp 1`{{execute}}
 
-You can learn more about best practices for running Scylla on Docker [here](https://docs.scylladb.com/operating-scylla/procedures/tips/best_practices_scylla_on_docker/).
+You can learn more about best practices for running ScyllaDB on Docker [here](https://docs.scylladb.com/operating-scylla/procedures/tips/best_practices_scylla_on_docker/).
  
 Create two more nodes, Node_Y and Node_Z, and add them to the cluster of Node_X.
 
@@ -23,7 +23,7 @@ Wait a minute or so and check the node status:
 
 `docker exec -it Node_X nodetool status`{{execute}}
 
-You’ll see that eventually, all the nodes have UN for status. U means up, and N means normal. If you get a message "nodetool: Unable to connect to Scylla API server: java.net.ConnectException: Connection refused (Connection refused)", it means you have to wait a bit more for the node to be up and responding. 
+You’ll see that eventually, all the nodes have UN for status. U means up, and N means normal. If you get a message "nodetool: Unable to connect to ScyllaDB API server: java.net.ConnectException: Connection refused (Connection refused)", it means you have to wait a bit more for the node to be up and responding. 
 
 Once the nodes are up, and the cluster is set, we can use the CQL shell to create a table.
 
