@@ -1,0 +1,21 @@
+{
+  "title": "Kubernetes Volumes",
+  "description": "How to use PV/PVC volumes in Kubernetes environments",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Create a PVC and a Pod that uses it",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
