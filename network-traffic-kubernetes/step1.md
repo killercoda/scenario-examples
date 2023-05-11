@@ -25,3 +25,9 @@ It's also possible to access ports using the top-right navigation in the termina
 Or we can display the link to that page:
 
 [ACCESS PORTS]({{TRAFFIC_SELECTOR}})
+
+It's also possible to generate access URLs in bash (foreground or background scripts) like this:
+
+```
+sed 's/PORT/80/g' /etc/killercoda/host
+```{{exec}}
