@@ -1,0 +1,19 @@
+{
+  "name": "twitch-sentinel",
+  "version": "1.0.0",
+  "description": "A Twitch bot powered by ScyllaDB",
+  "main": "sentinel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitch",
+    "scylladb"
+  ],
+  "author": "danielhe4rt",
+  "license": "MIT",
+  "dependencies": {
+    "cassandra-driver": "^4.6.4",
+    "tmi.js": "^1.8.5"
+  }
+}
