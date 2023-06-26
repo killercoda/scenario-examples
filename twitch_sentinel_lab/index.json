@@ -1,0 +1,50 @@
+{
+    "title": "ScyllaDB: Twitch Sentinel Hands-on Lab",
+    "description": "Build a high throughput application using TwitchTV as your main target.",
+    "details": {
+        "assets": {
+            "host01": [
+                {
+                    "file": "project/index.js",
+                    "target": "~/twitch-sentinel/"
+                },
+                {
+                    "file": "project/package.json",
+                    "target": "~/twitch-sentinel/"
+                },
+                {
+                    "file": "project/streamers.json",
+                    "target": "~/twitch-sentinel/"
+                },
+                {
+                    "file": "environment/.dh-bashrc",
+                    "target": "~/"
+                }
+            ]
+        },
+        "intro": {
+            "text": "intro.md",
+            "background": "background.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "steps": [
+            {
+                "title": "Connect to Scylla Docker and Create a Cluster",
+                "text": "step1.md"
+            },
+            {
+                "title": "Modeling our Keyspace and Running Queries",
+                "text": "step2.md"
+            },
+            {
+                "title": "Connecting into Twitch IRC and Crafting our App.",
+                "text": "step3.md"
+            }
+        ]
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
