@@ -1,0 +1,38 @@
+{
+  "title": "Introduction to ScyllaDB benchmarking",
+  "description": "Uses a single node ScyllaDB cluster along with the cassandra-stress tool",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Start ScyllaDB",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "Understanding the ScyllaDB terminology",
+	"text": "step2/text.md"
+      },
+      {
+        "title": "Run cassandra-stress",
+        "text": "step3/text.md"
+      },
+      {
+       "title": "Getting started with cassandra-stress profiles",
+       "text": "step4/text.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "profile.yml", "target": "~/", "chmod": "+rw"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

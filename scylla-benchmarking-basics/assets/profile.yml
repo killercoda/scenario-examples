@@ -1,0 +1,34 @@
+keyspace: iot
+keyspace_definition: |
+  CREATE KEYSPACE IF NOT EXISTS iot WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+table: devices
+table_definition: |
+  CREATE TABLE devices (
+    device_id uuid,
+    ts timestamp,
+    temperature float,
+    pressure float,
+    humidity float,
+    is_active boolean,
+  PRIMARY KEY(device_id, ts))
+
+columnspec:
+  - name: device_id
+    population: seq(1..1B)
+  - name: ts
+    population: uniform(1..100)
+
+insert:
+  partitions: fixed(1)
+  batchtype: UNLOGGED
+  select: fixed(10)/10
+
+
+queries:
+  read-latest:
+    cql: SELECT * FROM devices WHERE device_id = ? AND ts = ? LIMIT 1
+    fields: samerow
+  scan-partition:
+    cql: SELECT * FROM devices WHERE device_id = ? AND ts = ?
+    fields: samerow
