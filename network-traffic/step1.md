@@ -6,6 +6,13 @@
 Run Nginx on port 80 using Docker:
 
 ```
+docker run -p 80:80 nginx:alpine
+```{{exec}}
+
+
+Or run it in background:
+
+```
 docker run -d -p 80:80 nginx:alpine
 ```{{exec}}
 
