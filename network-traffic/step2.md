@@ -6,7 +6,7 @@
 Expose Apache on port 1234 using Docker:
 
 ```
-docker run -p 1234:80 httpd:alpine
+docker run -d -p 1234:80 httpd:alpine
 ```{{exec}}
 
 Now access Apache using this link:
