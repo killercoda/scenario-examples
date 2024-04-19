@@ -1,1 +1,1 @@
-try ubuntu commands
+Try ubuntu commands
