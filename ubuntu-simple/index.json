@@ -1,5 +1,17 @@
 {
   "title": "Ubuntu simple",
+  "description": "Try Ubuntu commands",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Try Ubuntu",
+        "text": "step1.md"
+      }
+    ]
+  },
   "backend": {
     "imageid": "ubuntu"
   }
