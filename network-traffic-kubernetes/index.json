@@ -7,8 +7,12 @@
     },
     "steps": [
       {
-        "title": "Run Nginx and access default page",
+        "title": "Expose Nginx via NodePort",
         "text": "step1.md"
+      },
+      {
+        "title": "Expose Apache via port-forwarding",
+        "text": "step2.md"
       }
     ]
   },

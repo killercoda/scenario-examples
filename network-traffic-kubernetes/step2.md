@@ -3,30 +3,23 @@
 <br>
 > Services need to be accessible via HTTP and **not** HTTPS.
 
-Run Nginx and expose via NodePort `30080`:
+Without NodePort we can also use port-forwarding:
 
 ```plain
-kubectl run nginx --image=nginx:alpine
-cat <<EOF | kubectl apply -f -
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx
-spec:
-  type: NodePort
-  selector:
-    run: nginx
-  ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 30080
-EOF
-kubectl wait --for=condition=ready pod nginx
+kubectl run httpd --image=httpd:alpine
+kubectl expose pod httpd --port 80 --name httpd
+kubectl wait --for=condition=ready pod httpd
+```{{exec}}
+
+Then start kubectl forward:
+
+```plain
+kubectl port-forward --address 0.0.0.0 service/httpd 80:80
 ```{{exec}}
 
 Now access it via
 
-[ACCESS NGINX]({{TRAFFIC_HOST1_30080}})
+[ACCESS APACHE]({{TRAFFIC_HOST1_80}})
 
 It's also possible to access ports using the top-right navigation in the terminal.
 Or we can display the link to that page:
@@ -36,5 +29,5 @@ Or we can display the link to that page:
 It's also possible to generate access URLs in bash (foreground or background scripts) like this:
 
 ```
-sed 's/PORT/30080/g' /etc/killercoda/host
+sed 's/PORT/80/g' /etc/killercoda/host
 ```{{exec}}
