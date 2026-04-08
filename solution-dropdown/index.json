@@ -1,0 +1,15 @@
+{
+  "title": "Solution Dropdown",
+  "description": "How to offer a solution to the user",
+  "details": {
+    "steps": [
+      {
+        "title": "Create a namespace",
+        "text": "step1.md"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
