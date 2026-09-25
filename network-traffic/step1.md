@@ -20,6 +20,8 @@ Now access Nginx using this link:
 
 [ACCESS NGINX]({{TRAFFIC_HOST1_80}})
 
+> Anyone with access to the URL has root access to the environment, more on [security](https://killercoda.com/security).
+
 It's also possible to access ports using the top-right navigation in the terminal.
 Or we can display the link to that page:
 

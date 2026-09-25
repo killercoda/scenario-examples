@@ -13,6 +13,8 @@ Now access Apache using this link:
 
 [ACCESS APACHE]({{TRAFFIC_HOST1_1234}})
 
+> Anyone with access to the URL has root access to the environment, more on [security](https://killercoda.com/security).
+
 It's also possible to access ports using the top-right navigation in the terminal.
 Or we can display the link to that page:
 
