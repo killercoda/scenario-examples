@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Dashboard",
-  "description": "Run and access the Kubernetes Dashboard",
+  "title": "Headlamp",
+  "description": "Run and access Headlamp, the Kubernetes web UI",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -13,7 +13,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "dashboard.yaml", "target": "/root", "chmod": "+w"}
+        {"file": "headlamp.yaml", "target": "/root", "chmod": "+w"}
       ]
     }
   },
